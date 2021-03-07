@@ -8,6 +8,7 @@ void show_bytes(byte_pointer start, size_t len)
 }
 void main()
 {
-    int x = 1;
-    show_bytes((byte_pointer)&x, sizeof(int));
+    int x = 0x01234567;
+    show_bytes((byte_pointer)&x, sizeof(float));
+    system("pause");
 }

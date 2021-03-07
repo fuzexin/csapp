@@ -1,11 +1,15 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-void main(){
-
-    int x = 0x80000000;
-    if((x-1)<0)
-        printf("True");
+int main()
+{
+    int i = 100;
+    if(0<=i && i<sizeof(unsigned))
+        printf("0<=i<4");
     else
-        printf("False");
-
+    {
+        printf("not in range");
+    }
+    system("pause");
+    return 0;
 }
